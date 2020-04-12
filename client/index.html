@@ -25,7 +25,10 @@
         </div>
         <button class="btn btn-info" type="submit" :disabled="!canCreate">Create</button>
     </form>
-    <div v-if="contacts.length">
+    <div v-if="loading">
+        <loader />
+    </div>
+    <div v-else-if="contacts.length">
         <div class="card mb-3" v-for="contact in contacts">
             <div class="card-body">
                 <h5 class="card-title" :style="{color: contact.marked ? 'teal' : 'black'}">{{contact.name}}</h5>
@@ -37,6 +40,7 @@
     </div>
     <p v-else>There's no contacts, yet!</p>
 </div>
+
 
 <script type="module" src="frontend.js"></script>
 </body>

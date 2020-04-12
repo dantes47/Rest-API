@@ -6,9 +6,17 @@ const CONTACTS = [
     {id: 1, name: 'Danny', value: '+00-234-345-23', marked: false}
 ]
 
+// GET
 app.get('/api/contacts', (req, res) => {
-    res.status(200).json(CONTACTS)
+    setTimeout(() => {
+        res.status(200).json(CONTACTS)
+    }, 1500)
 });
+
+// POST
+app.post('/api/contacts', (req, res) => {
+
+})
 
 app.use(express.static(path.resolve(__dirname, 'client')));
 

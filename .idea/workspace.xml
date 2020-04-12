@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/client/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/frontend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/opt/local/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
@@ -49,7 +52,7 @@
       <workItem from="1586453214404" duration="5855000" />
       <workItem from="1586541469307" duration="936000" />
       <workItem from="1586609494105" duration="1583000" />
-      <workItem from="1586706640343" duration="3071000" />
+      <workItem from="1586706640343" duration="5305000" />
     </task>
     <servers />
   </component>
@@ -57,6 +60,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1411" height="210" key="GridCell.Tab.0.bottom" timestamp="1586710586992">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1411" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586710586991" />
+    <state width="1411" height="210" key="GridCell.Tab.0.center" timestamp="1586710586989">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1411" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586710586989" />
+    <state width="1411" height="210" key="GridCell.Tab.0.left" timestamp="1586710586987">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1411" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586710586987" />
+    <state width="1411" height="210" key="GridCell.Tab.0.right" timestamp="1586710586990">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1411" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586710586990" />
     <state x="128" y="1" key="SettingsEditor" timestamp="1586541497884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
