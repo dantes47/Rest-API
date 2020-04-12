@@ -22,6 +22,7 @@ new Vue({
             contacts: []
         }
     },
+
     computed: {
         canCreate() {
             return this.form.value.trim() && this.form.name.trim();
@@ -29,18 +30,23 @@ new Vue({
 
     },
     methods: {
-        createContact() {
+        async createContact() {
             const {...contact} = this.form;
-            console.log(contact);
+            const newContact = await request('/api/contacts', 'POST', contact)
+            // console.log(response)
 
-            this.contacts.push({...contact, id: Date.now(), marked: false});
+            this.contacts.push(newContact);
             this.form.name = this.form.value = '';
         },
-        markContact(id) {
+        async markContact(id) {
             const contact = this.contacts.find(c => c.id === id);
-            contact.marked = true;
+            const updated = await request(`api/contacts/${id}`, 'PUT', {
+                ...contact, marked: true
+            })
+            contact.marked = updated.marked;
         },
-        removeContact(id) {
+        async removeContact(id) {
+            await request(`/api/contacts/${id}`, 'DELETE')
             this.contacts = this.contacts.filter(c => c.id !== id);
         }
     },

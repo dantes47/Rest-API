@@ -1,5 +1,13 @@
+h1
+{
+   text-align: center;
+}
 body {
     background: coral;
+}
+
+.form-inline, mb-3 {
+    justify-content: center;
 }
 
 [v-cloak] {
