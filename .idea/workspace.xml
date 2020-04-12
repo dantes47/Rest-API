@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24e62778-1213-456c-921d-34420ff900a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/frontend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +29,7 @@
     <property name="add_unversioned_files" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/opt/local/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +42,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586451198899</updated>
       <workItem from="1586451206015" duration="1713000" />
-      <workItem from="1586453214404" duration="2271000" />
+      <workItem from="1586453214404" duration="5855000" />
+      <workItem from="1586541469307" duration="936000" />
+      <workItem from="1586609494105" duration="1583000" />
     </task>
     <servers />
   </component>
@@ -50,6 +52,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="128" y="1" key="SettingsEditor" timestamp="1586541497884">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="128" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586541497884" />
     <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1586452680102">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

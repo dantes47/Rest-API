@@ -8,35 +8,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         body {
-            background: bisque;
+            background: coral;
+        }
+
+        [v-cloak] {
+            display: none;
         }
     </style>
     <title>REST API</title>
 </head>
 <body>
 
-<div class="container pt-3" id="app">
+<div class="container pt-3" id="app" v-cloak>
     <h1>REST API</h1>
 
-    <form class="form-inline mb-3">
+    <form class="form-inline mb-3" @submit.prevent="createContact">
         <div class="form-group mr-5">
             <label for="name" class="mr-3">Name</label>
-            <input type="text" class="form-control" id="name"></input>
+            <input type="text" class="form-control" id="name" v-model="form.name"></input>
         </div>
         <div class="form-group mr-5">
             <label for="value" class="mr-3">Value</label>
-            <input type="text" class="form-control" id="value"></input>
-            <button class="btn btn-info" type="submit">Create</button>
+            <input type="text" class="form-control" id="value" v-model="form.value"></input>
         </div>
+        <button class="btn btn-info" type="submit" :disabled="!canCreate">Create</button>
     </form>
-    <div class="card mb-3">
-        <div class="card-body">
-            <h5 class="card-title">Name</h5>
-            <p class="card-text">Value</p>
-            <button class="btn btn-warning">Cancel</button>
-            <button class="btn btn-danger">Delete</button>
+    <div v-if="contacts.length">
+        <div class="card mb-3" v-for="contact in contacts">
+            <div class="card-body">
+                <h5 class="card-title" :style="{color: contact.marked ? 'teal' : 'black'}">{{contact.name}}</h5>
+                <p class="card-text">{{contact.value}}</p>
+                <button class="btn btn-warning" @click="markContact(contact.id)" :disabled="contact.marked">Check</button>
+                <button class="btn btn-danger" @click="removeContact(contact.id)">Delete</button>
+            </div>
         </div>
     </div>
+    <p v-else>There's no contacts, yet!</p>
 </div>
 
 <script type="module" src="frontend.js"></script>
